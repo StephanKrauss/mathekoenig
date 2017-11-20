@@ -62,11 +62,10 @@
     <div class="col-md-4 col-sm-6 col-xs-12 col-md-offset-1 col-sm-offset-1">
         <img src="/images/truhe_max.png" class="visible-lg visible-md"> <br>
         <img src="/images/truhe_midi.png" class="visible-sm"> <br>
-        <img src="/images/truhe_mini.png" class="visible-xs">
+        <img src="/images/truhe_mini.png" class="visible-xs"> <br>
+        <img src="/images/coin.png">
     </div>
 </div>
-
-
 
 <script src="/jquery/jquery-3.2.1.min.js"></script>
 <script src="/bootstrap/js/bootstrap.js"></script>
