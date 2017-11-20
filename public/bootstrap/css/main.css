@@ -5,3 +5,11 @@ body{
 .ziffer{
     margin: 5px;
 }
+
+.anzeige{
+    font-size: 30px;
+}
+
+.abstand{
+    margin-bottom: 10px;
+}
