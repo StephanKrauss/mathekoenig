@@ -1,3 +1,23 @@
 body{
     background-image: url("/images/mathe.png");
 }
+
+.ziffer{
+    margin: 5px;
+}
+
+.rot{
+    background-color: red;
+}
+
+.gelb{
+    background-color: yellow;
+}
+
+.gruen{
+    background-color: green;
+}
+
+.blau{
+    background-color: blue;
+}
