@@ -1,0 +1,25 @@
+{
+    "name": "Web App Mathekoenig",
+    "description": "Einfache Web App zur Unterstützung des erlernen der Mal - Folgen",
+    "keywords": ["microframework", "slim", "Web App", "Ein mal eins", "multiplication table"],
+    "homepage": "https://github.com/StephanKrauss/mathekoenig",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stephan Krauß",
+            "email": "info@stephankrauss.de",
+            "homepage": "http://www.stephankrauss.de/"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "slim/slim": "^3.1",
+        "slim/twig-view": "^2.2",
+        "slim/pdo": "^1.10"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\": "src/application"
+        }
+    }
+}
