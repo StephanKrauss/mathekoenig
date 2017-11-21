@@ -4,6 +4,7 @@ body{
 
 .ziffer{
     margin: 5px;
+    cursor: crosshair;
 }
 
 .anzeige{
@@ -12,4 +13,12 @@ body{
 
 .abstand{
     margin-bottom: 10px;
+}
+
+#speichern1{
+    cursor: pointer;
+}
+
+#speichern2{
+    cursor: pointer;
 }
