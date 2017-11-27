@@ -15,6 +15,8 @@ var startTemplate = (
         var ergebnisGerechnet = 0;
         var ergebnisAnzeige = '';
 
+        var flagFalsch= 0;
+
         function erststart(){
             var min = 1;
             var max = 10;
@@ -25,12 +27,33 @@ var startTemplate = (
         function vergleich(ergebnisAnzeige) {
             if(ergebnisAnzeige == ergebnisGerechnet){
                 richtig++;
+
+                $("#ergebnis").removeClass('error');
+
+                flagFalsch = 0;
+
+                if(richtig > 2)
+                    $('#speichern1').show();
             }
             else{
                 richtig--;
                 if(richtig < 0){
                     richtig = 0;
                 }
+
+                $("#ergebnis").addClass('error');
+
+                $("#anzeigeX").addClass('error');
+                $("#coins").addClass('error');
+
+                $('#speichern1').hide();
+
+                setTimeout(function () {
+                    $("#anzeigeX").removeClass('error');
+                    $("#coins").removeClass('error');
+                }, 500);
+
+                flagFalsch = 1;
 
             }
 
@@ -67,8 +90,10 @@ var startTemplate = (
         }
 
         function neueRechnung(){
-            faktor1 = erststart();
-            faktor2 = erststart();
+            if(flagFalsch != 1){
+                faktor1 = erststart();
+                faktor2 = erststart();
+            }
 
             $("#faktor1").html(faktor1);
             $("#faktor2").html(faktor2);
@@ -106,6 +131,8 @@ var startTemplate = (
         }
     }
 )();
+
+$('#speichern1').hide();
 
 startTemplate.start();
 

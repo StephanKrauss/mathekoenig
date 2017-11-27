@@ -14,19 +14,18 @@
     <!-- Bootstrap -->
     <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
 
+    <!-- Featherlight -->
+    <link type="text/css" rel="stylesheet" href="/featherlight/featherlight.min.css" />
+
     <!-- eigene CSS -->
     <link href="/bootstrap/css/main.css" rel="stylesheet">
-
 </head>
 <body>
 
-<div class="row">
-    <div class="col-lg11 col-md-11 col-sm-11 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 mark">
+<div class="row view1">
+    <div class="anzeige col-lg-11 col-md-11 col-sm-11 hidden-xs col-md-offset-1 col-sm-offset-1 mark">
         <img src="/images/krone_mini.png">
     </div>
-</div>
-
-<div class="row view1">
     <div class="col-lg11 col-md-11 col-sm-11 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 mark abstand">
         <span>&nbsp;</span>
         <span class="anzeige" id="faktor1">  </span>
@@ -52,19 +51,44 @@
         <img src="/images/3-64.gif" class="ziffer" id="3"> <br>
 
         <img src="/images/0-64.gif" class="ziffer" id="0">
-        <img src="/images/coin.png" id="speichern1">
-        <span id="coins" class="anzeige">0</span><span class="anzeige">x</span> <br>
+        <img src="/images/coin.png">
+        <span id="coins" class="anzeige">0</span><span class="anzeige" id="anzeigeX">x</span> <br>
+
+        <a class="btn btn-success col-md-7 col-sm-7 col-xs-7 col-lg-7"  id="speichern1">weiter</a>
+        <a class="btn btn-info col-md-4 col-sm-4 col-xs-4 col-lg-4" href="#" data-featherlight="#infoView1">Info</a>
     </div>
+</div>
+
+<div class="lightbox col-lg-6 col-md-6 col-sm-6 col-xs-12" id="infoView1">
+    <h3 class="purpur">Mathekönig</h3>
+    <img src="/images/burghauptmann_mini.png" style="float: left;">
+    <p>
+        Jede richtig gelöste Aufgabe bringt dir ein Goldstück.
+        Ab 10 Goldstücke kannst du deine Goldstücke zu deinem Schatz hinzufügen.
+    </p>
 </div>
 
 <div class="row view2">
     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col-md-offset-1 col-sm-offset-1">
-        <img src="/images/coin.png" id="speichern2">
+        <img src="/images/coin.png" id="speichern2"> <br>
+        <a class="btn btn-info col-md-4 col-sm-4 col-xs-4 col-lg-4" href="#" data-featherlight="#infoView2">Info</a>
     </div>
+</div>
+
+<div class="lightbox col-lg-6 col-md-6 col-sm-6 col-xs-12" id="infoView2">
+    <h3 class="purpur">Mathekönig</h3>
+    <img src="/images/prinzessin_mini.png" style="float: left;">
+    <p>
+        Bitte melde dich mit Benutzernamen und Passwort an. Hast du noch keinen Goldschatz angelegt,
+        so gib einfach einen Spielernamen und ein Passwort ein. Merke dir <u>unbedingt</u> deinen
+        Spielernamen und dein Passwort.
+    </p>
 </div>
 
 <script src="/jquery/jquery-3.2.1.min.js"></script>
 <script src="/bootstrap/js/bootstrap.js"></script>
+<script src="/featherlight/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
 <script src="/template/start.js" type="text/javascript"></script>
 </body>
 </html>

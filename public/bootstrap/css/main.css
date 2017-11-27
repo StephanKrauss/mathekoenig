@@ -22,3 +22,14 @@ body{
 #speichern2{
     cursor: pointer;
 }
+
+.error{
+    background-color: #f76a78;
+    padding: 10px;
+}
+
+.lightbox { display: none; }
+
+.purpur{
+    color: #FF00FF;
+}
