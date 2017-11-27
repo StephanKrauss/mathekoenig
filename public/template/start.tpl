@@ -65,6 +65,9 @@
     <p>
         Jede richtig gelöste Aufgabe bringt dir ein Goldstück.
         Ab 10 Goldstücke kannst du deine Goldstücke zu deinem Schatz hinzufügen.
+        <p>
+            <button class="btn btn-warning closeButton" type="submit">schliessen</button>
+        </p>
     </p>
 </div>
 
@@ -82,6 +85,9 @@
         Bitte melde dich mit Benutzernamen und Passwort an. Hast du noch keinen Goldschatz angelegt,
         so gib einfach einen Spielernamen und ein Passwort ein. Merke dir <u>unbedingt</u> deinen
         Spielernamen und dein Passwort.
+        <p>
+            <button class="btn btn-warning closeButton" type="submit">schliessen</button>
+        </p>
     </p>
 </div>
 

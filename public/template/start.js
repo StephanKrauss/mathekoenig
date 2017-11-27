@@ -132,6 +132,10 @@ var startTemplate = (
     }
 )();
 
+$(".closeButton").on('click', function(){
+    $('.featherlight-close').click();
+});
+
 $('#speichern1').hide();
 
 startTemplate.start();
