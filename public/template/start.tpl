@@ -55,13 +55,13 @@
         <span id="coins" class="anzeige">0</span><span class="anzeige" id="anzeigeX">x</span> <br>
 
         <a class="btn btn-success col-md-7 col-sm-7 col-xs-7 col-lg-7"  id="speichern1">weiter</a>
-        <a class="btn btn-info col-md-4 col-sm-4 col-xs-4 col-lg-4" href="#" data-featherlight="#infoView1">Info</a>
+        <a class="btn btn-info col-md-4 col-sm-4 col-xs-4 col-lg-4 infoView" href="#" data-featherlight="#infoView1">Info</a>
     </div>
 </div>
 
 <div class="lightbox col-lg-6 col-md-6 col-sm-6 col-xs-12" id="infoView1">
     <h3 class="purpur">Mathekönig</h3>
-    <img src="/images/burghauptmann_mini.png" style="float: left;">
+    <img class="zufall" style="float: left;">
     <p>
         Jede richtig gelöste Aufgabe bringt dir ein Goldstück.
         Ab 10 Goldstücke kannst du deine Goldstücke zu deinem Schatz hinzufügen.
@@ -74,13 +74,13 @@
 <div class="row view2">
     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col-md-offset-1 col-sm-offset-1">
         <img src="/images/coin.png" id="speichern2"> <br>
-        <a class="btn btn-info col-md-4 col-sm-4 col-xs-4 col-lg-4" href="#" data-featherlight="#infoView2">Info</a>
+        <a class="btn btn-info col-md-4 col-sm-4 col-xs-4 col-lg-4 infoView" href="#" data-featherlight="#infoView2" onload="function(){alert('Load')}">Info</a>
     </div>
 </div>
 
 <div class="lightbox col-lg-6 col-md-6 col-sm-6 col-xs-12" id="infoView2">
     <h3 class="purpur">Mathekönig</h3>
-    <img src="/images/prinzessin_mini.png" style="float: left;">
+    <img class="zufall" style="float: left;">
     <p>
         Bitte melde dich mit Benutzernamen und Passwort an. Hast du noch keinen Goldschatz angelegt,
         so gib einfach einen Spielernamen und ein Passwort ein. Merke dir <u>unbedingt</u> deinen
@@ -93,7 +93,7 @@
 
 <script src="/jquery/jquery-3.2.1.min.js"></script>
 <script src="/bootstrap/js/bootstrap.js"></script>
-<script src="/featherlight/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/featherlight/featherlight.js" type="text/javascript" charset="utf-8"></script>
 
 <script src="/template/start.js" type="text/javascript"></script>
 </body>

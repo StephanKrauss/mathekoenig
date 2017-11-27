@@ -138,6 +138,16 @@ $(".closeButton").on('click', function(){
 
 $('#speichern1').hide();
 
+$(".infoView").on('click', function()
+{
+    var min = 1;
+    var max = 6;
+
+    var zufall = Math.floor(Math.random() * (max - min)) + min;
+
+    $("img.zufall").attr('src','/images/' + zufall + '.png')
+});
+
 startTemplate.start();
 
 $(".ziffer").on('click', function(){
