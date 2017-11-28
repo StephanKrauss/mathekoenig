@@ -23,33 +23,33 @@
 <body>
 
 <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a href="index.php">Goldstücke</a></li>
-                <li><a href="index.php">Anmelden</a></li>
-                <li><a href="index.php">Übersicht</a></li>
-            </ul>
-        </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li><a href="index.php">Anmelden</a></li>
+            <li><a href="index.php">Rechnen</a></li>
+            <li><a href="index.php">Übersicht</a></li>
+            <li><a href="index.php">Abmelden</a></li>
+        </ul>
     </div>
 </nav>
 
 <div class="row view1">
-    <div class="anzeige col-lg-11 col-md-11 col-sm-11 hidden-xs col-md-offset-1 col-sm-offset-1 mark">
+    <div class="anzeige col-lg-12 col-md-12 col-sm-12 hidden-xs mark">
         <img src="/images/krone_mini.png">
     </div>
-    <div class="col-lg11 col-md-11 col-sm-11 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 mark abstand">
-        <span>&nbsp;</span>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mark abstand">
         <span class="anzeige" id="faktor1">  </span>
         <span class="anzeige"> * </span>
         <span class="anzeige" id="faktor2">  </span>
