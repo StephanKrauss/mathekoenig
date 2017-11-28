@@ -95,6 +95,7 @@
 <script src="/jquery/jquery-3.2.1.min.js"></script>
 <script src="/bootstrap/js/bootstrap.js"></script>
 <script src="/featherlight/featherlight.js" type="text/javascript" charset="utf-8"></script>
+<script src="/cookie/js.cookie.js" type="text/javascript"></script>
 
 <script src="/template/start.js" type="text/javascript"></script>
 </body>

@@ -51,6 +51,8 @@ var startTemplate = (
                 flagFalsch = 1;
 
             }
+            
+            Cookies.set('anzahl', richtig, { expires: 365, path: '' });
 
             anzeigeCoins();
 
