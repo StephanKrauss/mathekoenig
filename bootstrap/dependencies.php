@@ -7,8 +7,14 @@
 	 */
 
 	// Controller
-	$container[\App\Controller\Start\StartController::class ] = function($c){
+	$container[\App\Controller\Start\StartController::class] = function($c){
 		return new \App\Controller\Start\StartController(
+			$c['view']
+		);
+	};
+
+	$container[\App\Controller\Anmelden\AnmeldenController::class]=function($c) {
+		return new \App\Controller\Anmelden\AnmeldenController(
 			$c['view']
 		);
 	};

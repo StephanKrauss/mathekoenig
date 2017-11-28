@@ -8,3 +8,5 @@
 
 // Startseite
 $app->any('/' , $container[\App\Controller\Start\StartController::class]);
+$app->any('/start/' , $container[\App\Controller\Start\StartController::class]);
+$app->any('/anmelden/' , $container[\App\Controller\Anmelden\AnmeldenController::class]);
