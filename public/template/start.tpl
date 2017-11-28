@@ -22,6 +22,28 @@
 </head>
 <body>
 
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="index.php">Goldstücke</a></li>
+                <li><a href="index.php">Anmelden</a></li>
+                <li><a href="index.php">Übersicht</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
 <div class="row view1">
     <div class="anzeige col-lg-11 col-md-11 col-sm-11 hidden-xs col-md-offset-1 col-sm-offset-1 mark">
         <img src="/images/krone_mini.png">
@@ -54,7 +76,6 @@
         <img src="/images/coin.png">
         <span id="coins" class="anzeige">0</span><span class="anzeige" id="anzeigeX">x</span> <br>
 
-        <a class="btn btn-success col-md-7 col-sm-7 col-xs-7 col-lg-7"  id="speichern1">weiter</a>
         <a class="btn btn-info col-md-4 col-sm-4 col-xs-4 col-lg-4 infoView" href="#" data-featherlight="#infoView1">Info</a>
     </div>
 </div>
@@ -65,26 +86,6 @@
     <p>
         Jede richtig gelöste Aufgabe bringt dir ein Goldstück.
         Ab 10 Goldstücke kannst du deine Goldstücke zu deinem Schatz hinzufügen.
-        <p>
-            <button class="btn btn-warning closeButton" type="submit">schliessen</button>
-        </p>
-    </p>
-</div>
-
-<div class="row view2">
-    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col-md-offset-1 col-sm-offset-1">
-        <img src="/images/coin.png" id="speichern2"> <br>
-        <a class="btn btn-info col-md-4 col-sm-4 col-xs-4 col-lg-4 infoView" href="#" data-featherlight="#infoView2" onload="function(){alert('Load')}">Info</a>
-    </div>
-</div>
-
-<div class="lightbox col-lg-6 col-md-6 col-sm-6 col-xs-12" id="infoView2">
-    <h3 class="purpur">Mathekönig</h3>
-    <img class="zufall" style="float: left;">
-    <p>
-        Bitte melde dich mit Benutzernamen und Passwort an. Hast du noch keinen Goldschatz angelegt,
-        so gib einfach einen Spielernamen und ein Passwort ein. Merke dir <u>unbedingt</u> deinen
-        Spielernamen und dein Passwort.
         <p>
             <button class="btn btn-warning closeButton" type="submit">schliessen</button>
         </p>

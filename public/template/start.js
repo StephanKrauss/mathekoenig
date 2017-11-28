@@ -31,9 +31,6 @@ var startTemplate = (
                 $("#ergebnis").removeClass('error');
 
                 flagFalsch = 0;
-
-                if(richtig > 2)
-                    $('#speichern1').show();
             }
             else{
                 richtig--;
@@ -45,8 +42,6 @@ var startTemplate = (
 
                 $("#anzeigeX").addClass('error');
                 $("#coins").addClass('error');
-
-                $('#speichern1').hide();
 
                 setTimeout(function () {
                     $("#anzeigeX").removeClass('error');
@@ -117,16 +112,6 @@ var startTemplate = (
                 neueRechnung();
 
                 return this;
-            },
-            noView1: function(){
-                if(richtig > 0){
-                    $(".view1").hide();
-                    $(".view2").show();
-                }
-            },
-            noView2: function(){
-                $(".view1").show();
-                $(".view2").hide();
             }
         }
     }
@@ -152,14 +137,6 @@ startTemplate.start();
 
 $(".ziffer").on('click', function(){
     startTemplate.button(this.id);
-});
-
-$("#speichern1").on('click', function(){
-    startTemplate.noView1();
-});
-
-$("#speichern2").on('click', function(){
-    startTemplate.noView2();
 });
 
 

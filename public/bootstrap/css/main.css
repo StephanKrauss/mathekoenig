@@ -37,3 +37,22 @@ body{
 .zufall{
     margin-right: 5px;
 }
+
+.navbar, .navbar-inverse {
+    border-radius: 0;
+    border: none;
+    margin-bottom: 0;
+    background-color: #31b0d5;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.nav li {
+    display: inline;
+    color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff;
+    font-size: 20px;
+}
