@@ -42,6 +42,12 @@
     </div>
 </nav>
 
+<div class="row view1">
+    <div class="anzeige col-lg-12 col-md-12 col-sm-12 hidden-xs mark">
+        <img src="/images/krone_mini.png">
+    </div>
+</div>
+
 <div class="row">
     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-11 col-md-offset-1 col-sm-offset-1 abstand">
         &nbsp;
