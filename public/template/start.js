@@ -109,8 +109,16 @@ var startTemplate = (
 
                 return this;
             },
-            start: function(){
-                $(".view2").hide();
+            start: function()
+            {
+                var cookieWert = Cookies.get('anzahl');
+
+                if(isNaN(cookieWert))
+                    richtig = 0;
+                else
+                    richtig = cookieWert;
+
+                anzeigeCoins();
                 neueRechnung();
 
                 return this;
@@ -118,6 +126,8 @@ var startTemplate = (
         }
     }
 )();
+
+
 
 $(".closeButton").on('click', function(){
     $('.featherlight-close').click();
