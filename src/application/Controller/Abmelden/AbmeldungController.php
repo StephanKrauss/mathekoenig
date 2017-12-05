@@ -1,18 +1,18 @@
 <?php
 
-	namespace App\Controller\Anmelden;
+	namespace App\Controller\Abmelden;
 
 	use Slim\Http\Request;
 	use Slim\Http\Response;
 
 	/**
-	 * Anmeldung Controller
+	 * Abmeldung Controller
 	 *
 	 * @author Stephan Krauß
 	 * @date 28.11.2017
 	 * @file AnmeldenController.php
 	 */
-	class AnmeldenController
+	class AbmeldungController
 	{
 		protected $view = null;
 
@@ -33,8 +33,7 @@
 			try{
 				$templateVars = [];
 
-
-				return $this->view->render( $response, 'anmelden.tpl', $templateVars);
+				return $this->view->render( $response, 'abmelden.tpl', $templateVars);
 			}
 			catch(\Exception $e){
 				throw $e;

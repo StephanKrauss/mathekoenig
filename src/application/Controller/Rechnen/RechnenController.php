@@ -1,18 +1,18 @@
 <?php
 
-	namespace App\Controller\Anmelden;
+	namespace App\Controller\Rechnen;
 
 	use Slim\Http\Request;
 	use Slim\Http\Response;
 
 	/**
-	 * Anmeldung Controller
+	 * Start Controller
 	 *
 	 * @author Stephan Krauß
-	 * @date 28.11.2017
-	 * @file AnmeldenController.php
+	 * @date 20.11.2017
+	 * @file Start.php
 	 */
-	class AnmeldenController
+	class RechnenController
 	{
 		protected $view = null;
 
@@ -34,7 +34,7 @@
 				$templateVars = [];
 
 
-				return $this->view->render( $response, 'anmelden.tpl', $templateVars);
+				return $this->view->render( $response, 'rechnen.tpl', $templateVars);
 			}
 			catch(\Exception $e){
 				throw $e;

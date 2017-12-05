@@ -7,6 +7,14 @@
  */
 
 // Startseite
-$app->any('/' , $container[\App\Controller\Start\StartController::class]);
-$app->any('/start/' , $container[\App\Controller\Start\StartController::class]);
+$app->any('/' , $container[\App\Controller\Anmelden\AnmeldenController::class]);
 $app->any('/anmelden/' , $container[\App\Controller\Anmelden\AnmeldenController::class]);
+
+// Rechnen
+$app->any('/rechnen/' , $container[\App\Controller\Rechnen\RechnenController::class]);
+
+// Übersicht
+$app->any('/uebersicht/' , $container[\App\Controller\Uebersicht\UebersichtController::class]);
+
+// Abmelden
+$app->any('/abmelden/' , $container[\App\Controller\Abmelden\AbmeldungController::class]);

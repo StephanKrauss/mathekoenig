@@ -1,18 +1,18 @@
 <?php
 
-	namespace App\Controller\Start;
+	namespace App\Controller\Uebersicht;
 
 	use Slim\Http\Request;
 	use Slim\Http\Response;
 
 	/**
-	 * Start Controller
+	 * Anmeldung Controller
 	 *
 	 * @author Stephan Krauß
-	 * @date 20.11.2017
-	 * @file Start.php
+	 * @date 28.11.2017
+	 * @file AnmeldenController.php
 	 */
-	class StartController
+	class UebersichtController
 	{
 		protected $view = null;
 
@@ -33,8 +33,7 @@
 			try{
 				$templateVars = [];
 
-
-				return $this->view->render( $response, 'start.tpl', $templateVars);
+				return $this->view->render( $response, 'uebersicht.tpl', $templateVars);
 			}
 			catch(\Exception $e){
 				throw $e;

@@ -6,8 +6,8 @@
 	 * @since 20.11.2017 18:31
 	 */
 
-	namespace App\Controller\Start;
+	namespace App\Controller\Rechnen;
 
-	class StartException extends \Exception{
+	class RechnenException extends \Exception{
 
 	}

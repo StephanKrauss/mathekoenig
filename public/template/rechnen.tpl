@@ -95,6 +95,6 @@
 <script src="/featherlight/featherlight.js" type="text/javascript" charset="utf-8"></script>
 <script src="/cookie/js.cookie.js" type="text/javascript"></script>
 
-<script src="/template/start.js" type="text/javascript"></script>
+<script src="/template/rechnen.js" type="text/javascript"></script>
 </body>
 </html>
