@@ -8,7 +8,7 @@
 
 // Startseite
 $app->any('/' , $container[\App\Controller\Anmelden\AnmeldenController::class]);
-$app->any('/anmelden/' , $container[\App\Controller\Anmelden\AnmeldenController::class]);
+$app->any('/anmelden/[{login}]' , $container[\App\Controller\Anmelden\AnmeldenController::class]);
 
 // Rechnen
 $app->any('/rechnen/' , $container[\App\Controller\Rechnen\RechnenController::class]);

@@ -15,17 +15,24 @@
 
         &nbsp; <br>
         Hast du ein Spielkonto ? <br>
-        Ja <input value="1" name="vorhanden" checked="checked" type="radio">
-        Nein <input value="0" name="vorhanden" type="radio"> <br>&nbsp;<br>
+        Nein <input value="0" name="vorhanden" type="radio">
+        Ja <input value="1" name="vorhanden" type="radio" checked>
+        <br>&nbsp;<br>
 
-        <input placeholder="Spielername" class="" type="text"> <br>&nbsp;<br>
+        <input placeholder="Spielername" class="" type="text" minlength="8" id="benutzername"> <br>&nbsp;<br>
 
-        Junge <input value="1" name="group" type="radio">
-        Mädchen <input value="2" checked="checked" name="group" type="radio"> <br>&nbsp;<br>
+        <div id="geschlecht">
+            Junge <input value="1" name="group" type="radio">
+            Mädchen <input value="2" checked="checked" name="group" type="radio"> <br>&nbsp;<br>
+        </div>
 
-        <input placeholder="Passwort" class="" type="password"> <br>&nbsp;<br>
+        <input class="" type="password" id="passwort" minlength="8"> <br>&nbsp;<br>
 
-        <a class="btn btn-success col-lg-3 col-md-5 col-sm-5 col-xs-4" href="#">anmelden</a> <br>&nbsp;<br>
+        <span id="serverInfo" style="border: red 1px solid;">
+            Das ist eine Information
+        </span> <br><br>
+
+        <a class="btn btn-success col-lg-3 col-md-5 col-sm-5 col-xs-4" href="#" id="anmelden">anmelden</a> <br>&nbsp;<br>
 
         <a class="btn btn-info col-lg-3 col-md-5 col-sm-5 col-xs-4 infoView" href="#" data-featherlight="#infoView1">Info</a>
         <p>&nbsp;</p>

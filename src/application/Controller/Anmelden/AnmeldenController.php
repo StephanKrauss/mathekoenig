@@ -28,17 +28,49 @@
 			$this->view = $view;
 		}
 
+		/**
+		 * @param \Slim\Http\Request $request
+		 * @param \Slim\Http\Response $response
+		 * @param array $params
+		 *
+		 * @return \Psr\Http\Message\ResponseInterface
+		 * @throws \Exception
+		 */
 		public function __invoke(Request $request, Response $response, array $params)
 		{
 			try{
 				$templateVars = [];
 
-				$templateVars['subtemplate'] = 'anmelden';
+				// Erststart
+				if(count($params) == 0){
+					$templateVars['subtemplate'] = 'anmelden';
 
-				return $this->view->render( $response, 'main.tpl', $templateVars);
+					return $this->view->render( $response, 'main.tpl', $templateVars);
+				}
+				// Login
+				{
+					echo $this->checkLogin($_POST);
+				}
+
 			}
 			catch(\Exception $e){
 				throw $e;
 			}
+		}
+
+		/**
+		 * kontrolliert die Anmeldung
+		 *
+		 * @return string
+		 */
+		protected function checkLogin()
+		{
+			$response = [
+				'success' => true,
+				'titelId' => 5,
+				'titelName' => 'Herzog'
+			];
+
+			return json_encode($response);
 		}
 	}
