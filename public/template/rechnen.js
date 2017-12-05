@@ -69,7 +69,7 @@ var startTemplate = (
 
             }
 
-            Cookies.set('anzahl', richtig, { expires: 365, path: '' });
+            Cookies.set('anzahl', richtig, { expires: 365, path: '/' });
 
             anzeigeCoins();
 

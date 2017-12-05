@@ -14,6 +14,7 @@ $(document).ready(function(){
     });
 
     $("#abmelden").on('click', function(){
+        Cookies.remove('anzahl');
         window.location.href = '/anmelden/';
     });
 });
