@@ -25,6 +25,7 @@
     <script src="/bootstrap/js/bootstrap.js"></script>
     <script src="/featherlight/featherlight.js" type="text/javascript" charset="utf-8"></script>
     <script src="/cookie/js.cookie.js" type="text/javascript"></script>
+
 </head>
 <body>
 
@@ -33,5 +34,8 @@
 
     {% include subtemplate ~ '.tpl' %}
 </div>
+
+<script src="/javascript/common.js" type="text/javascript"></script>
+
 </body>
 </html>

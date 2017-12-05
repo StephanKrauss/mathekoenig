@@ -24,7 +24,9 @@ var startTemplate = (
             return Math.floor(Math.random() * (max - min)) + min;
         }
 
-        function vergleich(ergebnisAnzeige) {
+        function vergleich(ergebnisAnzeige)
+        {
+            // richtig gerechnet
             if(ergebnisAnzeige == ergebnisGerechnet){
                 richtig++;
 
@@ -32,6 +34,7 @@ var startTemplate = (
 
                 flagFalsch = 0;
             }
+            // falsch gerechnet
             else{
                 richtig--;
                 if(richtig < 0){
@@ -101,7 +104,6 @@ var startTemplate = (
                 neueRechnung();
         }
 
-
         // public
         return{
             button: function (id) {
@@ -129,21 +131,10 @@ var startTemplate = (
 
 
 
-$(".closeButton").on('click', function(){
-    $('.featherlight-close').click();
-});
+
 
 $('#speichern1').hide();
 
-$(".infoView").on('click', function()
-{
-    var min = 1;
-    var max = 6;
-
-    var zufall = Math.floor(Math.random() * (max - min)) + min;
-
-    $("img.zufall").attr('src','/images/' + zufall + '.png')
-});
 
 startTemplate.start();
 
