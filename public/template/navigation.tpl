@@ -13,7 +13,7 @@
             <li><a href="/anmelden/">Anmelden</a></li>
             <li><a href="/rechnen/">Rechnen</a></li>
             <li><a href="/uebersicht/">Übersicht</a></li>
-            <li><a href="/abmelden/">Abmelden</a></li>
+            <li><a href="#" id="abmelden">Abmelden</a></li>
         </ul>
     </div>
 </nav>

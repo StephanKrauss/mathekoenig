@@ -15,6 +15,3 @@ $app->any('/rechnen/' , $container[\App\Controller\Rechnen\RechnenController::cl
 
 // Übersicht
 $app->any('/uebersicht/' , $container[\App\Controller\Uebersicht\UebersichtController::class]);
-
-// Abmelden
-$app->any('/abmelden/' , $container[\App\Controller\Abmelden\AbmeldungController::class]);

@@ -12,5 +12,9 @@ $(document).ready(function(){
     $(".closeButton").on('click', function(){
         $('.featherlight-close').click();
     });
+
+    $("#abmelden").on('click', function(){
+        window.location.href = '/anmelden/';
+    });
 });
 

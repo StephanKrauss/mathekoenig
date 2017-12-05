@@ -26,10 +26,3 @@
 			$c['view']
 		);
 	};
-
-	// Controller Abmelden
-	$container[\App\Controller\Abmelden\AbmeldungController::class]=function($c) {
-		return new \App\Controller\Abmelden\AbmeldungController(
-			$c['view']
-		);
-	};
