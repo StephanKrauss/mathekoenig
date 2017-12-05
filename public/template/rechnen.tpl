@@ -30,7 +30,8 @@
         <img src="/images/coin.png">
         <span id="coins" class="anzeige">0</span><span class="anzeige" id="anzeigeX">x</span> <br>
 
-        <a class="btn btn-info col-md-4 col-sm-4 col-xs-4 col-lg-4 infoView" href="#" data-featherlight="#infoView1">Info</a>
+        <a class="btn btn-info col-md-4 col-sm-4 col-xs-4 col-lg-4 infoView" href="#" data-featherlight="#infoView1" id="info">Info</a>
+        <a class="btn btn-success col-md-4 col-sm-4 col-xs-4 col-lg-4 infoView" id="speichern">speichern</a>
     </div>
 </div>
 

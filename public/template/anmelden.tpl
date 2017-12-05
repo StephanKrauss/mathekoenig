@@ -44,3 +44,5 @@
         </p>
     </p>
 </div>
+
+<script type="text/javascript" src="/template/anmelden.js"></script>

@@ -24,6 +24,20 @@ var startTemplate = (
             return Math.floor(Math.random() * (max - min)) + min;
         }
 
+        function buttonWechsel(richtig)
+        {
+            if(richtig >= 10){
+                $('#speichern').show();
+                $('#info').hide();
+            }
+            else{
+                $('#speichern').hide();
+                $('#info').show();
+            }
+
+            return;
+        }
+
         function vergleich(ergebnisAnzeige)
         {
             // richtig gerechnet
@@ -58,6 +72,8 @@ var startTemplate = (
             Cookies.set('anzahl', richtig, { expires: 365, path: '' });
 
             anzeigeCoins();
+
+            buttonWechsel(richtig);
 
             return;
         }
@@ -131,15 +147,17 @@ var startTemplate = (
 
 
 
+$(document).ready(function(){
 
+    // Speicher Button verstecken
+    $('#speichern').hide();
 
-$('#speichern1').hide();
+    startTemplate.start();
 
-
-startTemplate.start();
-
-$(".ziffer").on('click', function(){
-    startTemplate.button(this.id);
+    // Ziffernblock
+    $(".ziffer").on('click', function(){
+        startTemplate.button(this.id);
+    });
 });
 
 
