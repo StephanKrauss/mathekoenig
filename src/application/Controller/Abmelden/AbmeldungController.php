@@ -33,7 +33,9 @@
 			try{
 				$templateVars = [];
 
-				return $this->view->render( $response, 'abmelden.tpl', $templateVars);
+				$templateVars['subtemplate'] = 'abmelden';
+
+				return $this->view->render( $response, 'main.tpl', $templateVars);
 			}
 			catch(\Exception $e){
 				throw $e;

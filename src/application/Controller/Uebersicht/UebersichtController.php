@@ -33,7 +33,9 @@
 			try{
 				$templateVars = [];
 
-				return $this->view->render( $response, 'uebersicht.tpl', $templateVars);
+				$templateVars['subtemplate'] = 'uebersicht';
+
+				return $this->view->render( $response, 'main.tpl', $templateVars);
 			}
 			catch(\Exception $e){
 				throw $e;

@@ -33,8 +33,10 @@
 			try{
 				$templateVars = [];
 
+				$templateVars['subtemplate'] = 'rechnen';
 
-				return $this->view->render( $response, 'rechnen.tpl', $templateVars);
+
+				return $this->view->render( $response, 'main.tpl', $templateVars);
 			}
 			catch(\Exception $e){
 				throw $e;
