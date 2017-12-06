@@ -57,7 +57,12 @@
 				if(!$this->flagIsBurgbewohner)
 					$burgbewohner = $this->bestimmenBenutzerangaben($this->database, $burgbewohner, $_POST['benutzerId']);
 
-				echo json_encode($burgbewohner);
+				$antwort = [
+					'success' => true,
+					'burgbewohner' => $burgbewohner
+				];
+
+				echo json_encode($antwort);
 
 			}
 			catch(\Exception $e){

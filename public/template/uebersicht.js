@@ -11,7 +11,9 @@ var uebersicht = function(){
             },
             success: function(request)
             {
-                alert(request.koenig);
+                $.each(request.burgbewohner, function(key, value){
+                    $("#burgbewohner" + key).html(value.adel + "  " + value.benutzername + "  , " + value.schatz + "  Goldstücke");
+                });
             }
         });
 

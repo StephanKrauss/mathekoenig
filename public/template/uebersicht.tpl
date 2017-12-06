@@ -12,14 +12,16 @@
 
 <div class="row">
     <div class="col-lg-4 col-md-3 col-sm-4 col-xs-11 col-md-offset-1 col-sm-offset-1 mark">
+        &nbsp;<br>
+        <p id="burgbewohner0"></p>
+        <p id="burgbewohner1"></p>
+        <p id="burgbewohner2"></p>
+        <p id="burgbewohner3"></p>
 
-        <p id="koenig">AAA</p>
-        <p id="prinz">BBB</p>
-        <p id="ritter">CCC</p>
-        <p id="benutzer">DDD</p>
-
-        <a class="btn btn-info col-lg-3 col-md-5 col-sm-5 col-xs-4 infoView" href="#" data-featherlight="#infoView1">Info</a>
-        <p>&nbsp;</p>
+        <p>
+            <a class="btn btn-info col-lg-3 col-md-5 col-sm-5 col-xs-4 infoView" href="#" data-featherlight="#infoView1">Info</a>
+            <br> <br>
+        </p>
     </div>
 </div>
 
