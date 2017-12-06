@@ -17,11 +17,23 @@
         <p id="burgbewohner1"></p>
         <p id="burgbewohner2"></p>
         <p id="burgbewohner3"></p>
+    </div>
+</div>
 
+<div class="row">
+    <div class="col-lg-4 col-md-3 col-sm-4 col-xs-11 col-md-offset-1 col-sm-offset-1 mark">
         <p>
             <a class="btn btn-info col-lg-3 col-md-5 col-sm-5 col-xs-4 infoView" href="#" data-featherlight="#infoView1">Info</a>
             <br> <br>
         </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-4 col-md-3 col-sm-4 col-xs-11 col-md-offset-1 col-sm-offset-1 mark">
+        <img src="/images/truhe_mini.png" class="hidden-md hidden-lg">
+        <img src="/images/truhe_midi.png" class="hidden-xs hidden-sm">
+        <br> <br>
     </div>
 </div>
 
