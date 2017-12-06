@@ -18,7 +18,7 @@ var anmelden = function(){
                 passwort: passwort
             },
             success: function(request){
-                alert(request.titelName);
+                $("#serverInfo").html(request.titelName);
             }
         });
     }

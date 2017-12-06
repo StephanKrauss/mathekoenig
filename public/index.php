@@ -21,12 +21,13 @@ if (PHP_SAPI == 'cli-server') {
 	}
 }
 
+include_once('../bootstrap/config.php');
+
 include_once('../vendor/autoload.php');
 
 $app = new Slim\App();
 $container = $app->getContainer();
 
-include_once('../bootstrap/config.php');
 include_once('../bootstrap/container.php');
 
 include_once('../bootstrap/dependencies.php');

@@ -16,7 +16,8 @@
 	// Controller Anmeldung
 	$container[\App\Controller\Anmelden\AnmeldenController::class]=function($c) {
 		return new \App\Controller\Anmelden\AnmeldenController(
-			$c['view']
+			$c['view'],
+			$c['db']
 		);
 	};
 

@@ -15,6 +15,7 @@
 	class AnmeldenController
 	{
 		protected $view = null;
+		protected $database = null;
 
 		/**
 		 * StartController constructor.
@@ -22,10 +23,12 @@
 		 * @param \Slim\Tests\Views\Twig $view
 		 */
 		public function __construct(
-			\Slim\Views\Twig $view
+			\Slim\Views\Twig $view,
+			\Slim\PDO\Database $database
 		)
 		{
 			$this->view = $view;
+			$this->database = $database;
 		}
 
 		/**

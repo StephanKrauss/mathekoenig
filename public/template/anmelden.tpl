@@ -28,9 +28,7 @@
 
         <input class="" type="password" id="passwort" minlength="8"> <br>&nbsp;<br>
 
-        <span id="serverInfo" style="border: red 1px solid;">
-            Das ist eine Information
-        </span> <br><br>
+        <span id="serverInfo"></span> <br><br>
 
         <a class="btn btn-success col-lg-3 col-md-5 col-sm-5 col-xs-4" href="#" id="anmelden">anmelden</a> <br>&nbsp;<br>
 

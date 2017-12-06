@@ -6,6 +6,16 @@
 	 * @since 20.11.2017 18:24
 	 */
 
+	// Datenbank
+	$container['db'] = function($container) use($config)
+	{
+		$dsn = "mysql:host=".$config['db']['host'].";dbname=".$config['db']['dbname'].";charset=utf8";
+
+		$db = new \Slim\PDO\Database($dsn, $config['db']['usr'], $config['db']['pwd']);
+
+		return $db;
+	};
+
 	// View
 	$container['view'] = function ($container) {
 		$view = new \Slim\Views\Twig('./template', [
