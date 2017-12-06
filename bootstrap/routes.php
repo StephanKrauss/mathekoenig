@@ -15,3 +15,6 @@ $app->any('/rechnen/' , $container[\App\Controller\Rechnen\RechnenController::cl
 
 // Übersicht
 $app->any('/uebersicht/' , $container[\App\Controller\Uebersicht\UebersichtController::class]);
+
+// Spielstand - Child
+$app->post('/spielstand/', $container[\App\Controller\Spielstand\SpielstandController::class]);

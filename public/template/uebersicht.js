@@ -1,8 +1,19 @@
 var uebersicht = function(){
     // private
-    function spielstand()
+    function spielstand(benutzerId)
     {
-
+        $.ajax({
+            url: '/spielstand/',
+            method: 'POST',
+            dataType: 'json',
+            data: {
+                benutzerId: benutzerId
+            },
+            success: function(request)
+            {
+                alert(request.koenig);
+            }
+        });
 
     }
 
@@ -18,7 +29,7 @@ var uebersicht = function(){
             if(isNaN(benutzerId))
                 return;
 
-            spielstand();
+            spielstand(benutzerId);
         }
     }
 }();

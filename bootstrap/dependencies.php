@@ -28,3 +28,10 @@
 			$c['view']
 		);
 	};
+
+	// Controller Spielstand , Child
+	$container[\App\Controller\Spielstand\SpielstandController::class]=function($c) {
+		return new \App\Controller\Spielstand\SpielstandController(
+			$c['db']
+		);
+	};
