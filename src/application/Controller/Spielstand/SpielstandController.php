@@ -133,7 +133,7 @@
 					$burgbewohner[$i]['benutzername'] = $burgbewohner[$i]['alias'];
 
 				if($burgbewohner[$i]['benutzerId'] == $benutzerId)
-					$this->flagIsBurgbewohner = false;
+					$this->flagIsBurgbewohner = true;
 			}
 
 			return $burgbewohner;
