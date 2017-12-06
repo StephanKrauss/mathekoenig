@@ -16,6 +16,14 @@
 		return $db;
 	};
 
+	// Validator
+	$container['validator'] = function(){
+		$validator = new \App\Validator\GUMP('de');
+		// $validator = \App\Validator\GUMP::get_instance();
+
+		return $validator;
+	};
+
 	// View
 	$container['view'] = function ($container) {
 		$view = new \Slim\Views\Twig('./template', [

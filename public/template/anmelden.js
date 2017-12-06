@@ -1,24 +1,37 @@
-var anmelden = function(){
-    // private
-    var userId = 0;
-    var titelId = 0;
-    var titelBezeichnung = '';
-    var schatz = 0;
-
+var anmelden = function()
+{
     var benutzername = '';
-    var passwort = ''
+    var passwort = '';
 
     function anmeldenUser() {
+        var vorhanden =  $('input[name="vorhanden"]');
+        var vorhandenValue = vorhanden.filter(':checked').val();
+
+        var geschlecht =  $('input[name="geschlecht"]');
+        var geschlechtValue = geschlecht.filter(':checked').val();
+
+        $("#serverInfo").html('');
+
         $.ajax({
             url: '/anmelden/login',
             method: 'POST',
             dataType: 'json',
             data: {
                 benutzername: benutzername,
-                passwort: passwort
+                passwort: passwort,
+                vorhanden: vorhandenValue,
+                geschlecht: geschlechtValue
             },
-            success: function(request){
-                $("#serverInfo").html(request.titelName);
+            success: function(request)
+            {
+                if(request.success == false){
+                    Cookies.remove('benutzerId');
+                    $("#serverInfo").html(request.info);
+                }
+                else{
+                    Cookies.set('benutzerId', request.benutzerId, { expires: 365, path: '/' });
+                    window.location.href = '/uebersicht/';
+                }
             }
         });
     }
@@ -51,9 +64,6 @@ var anmelden = function(){
 
         return kontrolle;
     }
-
-
-
 
     // public
     return{
