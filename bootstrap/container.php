@@ -18,7 +18,7 @@
 
 	// Validator
 	$container['validator'] = function(){
-		$validator = new \App\Validator\GUMP('de');
+		$validator = new \App\Validator\Gump('de');
 		// $validator = \App\Validator\GUMP::get_instance();
 
 		return $validator;

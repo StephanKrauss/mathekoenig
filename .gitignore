@@ -1,3 +1,6 @@
 .idea/
 layout/
 _featherlight/
+bootstrap/config.php
+bootstrap/_config.php
+vendor/

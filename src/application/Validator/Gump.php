@@ -11,7 +11,7 @@
 
 	namespace App\Validator;
 
-class GUMP
+class Gump
 {
     // Singleton instance of GUMP
     protected static $instance = null;
