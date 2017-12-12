@@ -13,10 +13,13 @@
 <div class="row">
     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 col-md-offset-1 col-sm-offset-1 mark">
         &nbsp;<br>
-        <p id="burgbewohner0"></p>
-        <p id="burgbewohner1"></p>
-        <p id="burgbewohner2"></p>
-        <p id="burgbewohner3"></p>
+        <span id="burgbewohner0"></span> <br>
+        <span id="burgbewohner1"></span> <br>
+        <span id="burgbewohner2"></span> <br><br>
+
+        <span id="burgbewohner3" style="border: solid 1px green; padding: 5px;"></span>
+        <br><br>
+
         <p>
             <a class="btn btn-info col-lg-3 col-md-5 col-sm-5 col-xs-4 infoView" href="#" data-featherlight="#infoView1">Info</a>
         </p>
@@ -45,8 +48,18 @@
     </div>
 
     <div class="col-lg-6 hidden-md hidden-xs hidden-sm">
-        &nbsp; <img src="/images/gruen_rahmen.png"> <img src="/images/koenig_rahmen.png"><br>
-        &nbsp; <img src="/images/violett_rahmen.png"> <img src="/images/ritter_gruen_rahmen.png">
+        <span>
+            <img src="/images/gruen_rahmen.png">
+        </span>
+        <span>
+            <img src="/images/koenig_rahmen.png">
+        </span> <br>
+        <span>
+            <img src="/images/violett_rahmen.png">
+        </span>
+        <span>
+            <img src="/images/ritter_gruen_rahmen.png">
+        </span>
     </div>
 
 
