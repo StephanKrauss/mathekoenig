@@ -25,7 +25,8 @@
 	// Controller Übersicht
 	$container[\App\Controller\Uebersicht\UebersichtController::class]=function($c) {
 		return new \App\Controller\Uebersicht\UebersichtController(
-			$c['view']
+			$c['view'],
+			$c['db']
 		);
 	};
 
