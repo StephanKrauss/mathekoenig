@@ -13,11 +13,11 @@
 <div class="row">
     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 col-md-offset-1 col-sm-offset-1 mark">
         &nbsp;<br>
-        <span id="burgbewohner0"></span> <br>
-        <span id="burgbewohner1"></span> <br>
-        <span id="burgbewohner2"></span> <br><br>
+        <span id="burgbewohner0" style="border-bottom: solid red 1px;"></span> <br>
+        <span id="burgbewohner1" style="border-bottom: solid red 1px;"></span> <br>
+        <span id="burgbewohner2" style="border-bottom: solid red 1px;"></span> <br><br>
 
-        <span id="burgbewohner3" style="border: solid 1px green; padding: 5px;"></span>
+        <span id="burgbewohner3" style="padding: 5px; border-bottom: solid 1px green;"></span>
         <br><br>
 
         <p>
