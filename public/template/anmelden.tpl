@@ -19,13 +19,15 @@
         Ja <input value="1" name="vorhanden" type="radio" checked>
         <br>&nbsp;<br>
 
-        <input placeholder="Spielername" class="" type="text" minlength="8" id="benutzername"> <br>&nbsp;<br>
+        Spielername: ( min. 8 Zeichen ) <br>
+        <input class="" type="text" minlength="8" id="benutzername"> <br>&nbsp;<br>
 
         <div id="geschlecht">
             Junge <input value="1" name="geschlecht" type="radio">
             Mädchen <input value="2" checked="checked" name="geschlecht" type="radio"> <br>&nbsp;<br>
         </div>
 
+        Passwort: ( min. 8 Zeichen ) <br>
         <input class="" type="password" id="passwort" minlength="8"> <br>&nbsp;<br>
 
         <span id="serverInfo"></span> <br><br>
