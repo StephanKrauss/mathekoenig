@@ -26,7 +26,25 @@ var startTemplate = (
 
         function buttonWechsel(richtig)
         {
-            if(richtig >= 10){
+            var anzahl = Cookies.get('anzahl');
+            var benutzerId = Cookies.get('benutzerId');
+
+            if(parseInt(anzahl) >= 10 && parseInt(benutzerId) > 0) {
+                $('#speichern').html('speichern');
+                $('#speichern').on('click', function () {
+                    speichern();
+                });
+
+                $('#speichern').show();
+                $('#info').hide();
+            }
+            else if(parseInt(anzahl) >= 10){
+                $('#speichern').html('anmelden');
+
+                $('#speichern').on('click',function(){
+                    window.location.href = '/anmelden/';
+                });
+
                 $('#speichern').show();
                 $('#info').hide();
             }
@@ -76,6 +94,26 @@ var startTemplate = (
             buttonWechsel(richtig);
 
             return;
+        }
+
+        function speichern()
+        {
+            $.ajax({
+                url: '/speichern/',
+                method: 'POST',
+                dataType: 'json',
+                data: {
+                    benutzerId: Cookies.get('benutzerId'),
+                    anzahl: Cookies.get('anzahl')
+                },
+                success: function(response)
+                {
+                    if(response.success == true){
+                        Cookies.set('anzahl',0);
+                        window.location.href = '/uebersicht/';
+                    }
+                }
+            });
         }
 
         function anzeigeCoins(){
@@ -129,12 +167,16 @@ var startTemplate = (
             },
             start: function()
             {
-                var cookieWert = Cookies.get('anzahl');
+                var anzahl = Cookies.get('anzahl');
+                var benutzerId = Cookies.get('benutzerId');
 
-                if(isNaN(cookieWert))
+                // Speicher Button verstecken
+                $('#speichern').hide();
+
+                if(isNaN(anzahl))
                     richtig = 0;
                 else
-                    richtig = cookieWert;
+                    richtig = anzahl;
 
                 anzeigeCoins();
                 neueRechnung();
@@ -148,10 +190,6 @@ var startTemplate = (
 
 
 $(document).ready(function(){
-
-    // Speicher Button verstecken
-    $('#speichern').hide();
-
     startTemplate.start();
 
     // Ziffernblock

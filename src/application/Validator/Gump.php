@@ -168,7 +168,7 @@ class Gump
         $method = 'validate_'.$rule;
 
         if (method_exists(__CLASS__, $method) || isset(self::$validation_methods[$rule])) {
-            throw new Exception("Validator rule '$rule' already exists.");
+            throw new \Exception("Validator rule '$rule' already exists.");
         }
 
         self::$validation_methods[$rule] = $callback;
@@ -194,7 +194,7 @@ class Gump
         $method = 'filter_'.$rule;
 
         if (method_exists(__CLASS__, $method) || isset(self::$filter_methods[$rule])) {
-            throw new Exception("Filter rule '$rule' already exists.");
+            throw new \Exception("Filter rule '$rule' already exists.");
         }
 
         self::$filter_methods[$rule] = $callback;
@@ -456,7 +456,7 @@ class Gump
                             }
 
                         } else {
-                            throw new Exception("Validator method '$method' does not exist.");
+                            throw new \Exception("Validator method '$method' does not exist.");
                         }
                     }
                 }
@@ -699,7 +699,7 @@ class Gump
                     } elseif (isset(self::$filter_methods[$filter])) {
                         $value = call_user_func(self::$filter_methods[$filter], $value, $params);
                     } else {
-                        throw new Exception("Filter method '$filter' does not exist.");
+                        throw new \Exception("Filter method '$filter' does not exist.");
                     }
                 }
             }

@@ -36,3 +36,11 @@
 			$c['db']
 		);
 	};
+
+	// Controller Speichern , Child
+	$container[\App\Controller\Speichern\SpeichernController::class]=function($c) {
+		return new \App\Controller\Speichern\SpeichernController(
+			$c['db'],
+			$c['validator']
+		);
+	};

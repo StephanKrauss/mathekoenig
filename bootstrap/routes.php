@@ -18,3 +18,6 @@ $app->any('/uebersicht/' , $container[\App\Controller\Uebersicht\UebersichtContr
 
 // Spielstand - Child
 $app->post('/spielstand/', $container[\App\Controller\Spielstand\SpielstandController::class]);
+
+// speichern - Child
+$app->post('/speichern/', $container[\App\Controller\Speichern\SpeichernController::class]);
