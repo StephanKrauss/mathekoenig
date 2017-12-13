@@ -52,7 +52,8 @@
 				if(is_array($params)){
 					$vorhandeneGoldstuecke = $this->findeAnzahlGoldstuecke($this->database, $params['benutzerId']);
 					$vorhandeneGoldstuecke += $params['anzahl'];
-					$kontrolle = $this->updateAnzahlGoldstuecke($this->database, $params['benutzerId'], $vorhandeneGoldstuecke);
+					$titel = $this->neuerTitel($this->database, $params['benutzerId'], $vorhandeneGoldstuecke);
+					$kontrolle = $this->updateBenutzer($this->database, $params['benutzerId'], $vorhandeneGoldstuecke,$titel);
 				}
 
 				$antwort = [];
@@ -66,6 +67,29 @@
 			catch(\Exception $e){
 				throw $e;
 			}
+		}
+
+		/**
+		 * berechnen neue Titel ID
+		 *
+		 * @param $database
+		 * @param $benutzerId
+		 * @param $vorhandeneGoldstuecke
+		 *
+		 * @return mixed
+		 */
+		protected function neuerTitel($database, $benutzerId, $vorhandeneGoldstuecke)
+		{
+			$selectStatement = $database->select()
+				->from('adel')
+				->where('punkte','<=',$vorhandeneGoldstuecke)
+				->where('punkte', '<', $vorhandeneGoldstuecke)
+				->where('punkte','>',0);
+
+			$stmt = $selectStatement->execute();
+			$data = $stmt->fetch();
+
+			return $data['id'];
 		}
 
 		/**
@@ -132,12 +156,12 @@
 		 *
 		 * @return mixed
 		 */
-		protected function updateAnzahlGoldstuecke($database, $benutzerId, $anzahl)
+		protected function updateBenutzer($database, $benutzerId, $anzahl, $titel)
 		{
 			$updateCols = [
-				'schatz' => $anzahl
+				'schatz' => $anzahl,
+				'adel_id' => $titel
 			];
-
 
 			$updateStatement = $database->update($updateCols)
 			                           ->table('benutzer')
