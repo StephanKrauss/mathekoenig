@@ -96,8 +96,8 @@
 		{
 			$database = $this->database;
 
-			$cols = ['benutzername','passwort','geschlecht'];
-			$values = [$params['benutzername'],$params['passwort'],$params['geschlecht']];
+			$cols = ['benutzername','passwort','geschlecht','adel_id'];
+			$values = [$params['benutzername'],$params['passwort'],$params['geschlecht'],20];
 
 			$stm = $database
 				->insert()
