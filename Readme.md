@@ -46,6 +46,8 @@ https://de.wikipedia.org/wiki/MIT-Lizenz
 
 ### weitere Entwicklung des **Mathekönigs**
 + Bildung eigener kleiner Königreiche durch eine Spielergruppe ( Vers. 1.1 )
+	+ Darstellung der Liste des Spielstandes aller Spieler eines Königreiches ( Vers. 1.1.1 )  
+	+ Ausdrucken von Urkunden mit dem aktuellen Spielstand und dem Adelstitel ( Vers. 1.1.2 )  
 + Einbau eines Spielmodus ( ab Vers. 1.2 )
 	+ Abfrage der Quadratzahlen bis zur 20 ( ab Vers. 1.2.1 )
 	+ Übernahme von nicht zu beinflussenden Ereignissen ( ab Vers. 1.2.2 )
