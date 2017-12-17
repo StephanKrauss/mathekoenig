@@ -42,7 +42,7 @@ https://de.wikipedia.org/wiki/MIT-Lizenz
   Zum Aufruf des **Mathekönigs** muss eine Subdomain auf das Verzeichnis **'public'**	verweisen.
   
 **Bei auftretenden Fragen helfen wir gern !**  
-Über einen Link zu unserem Spieleserver: **'http://mathekoenig.stephankrauss.de'** würden wir uns freuen.  
+Über einen Link zu unserem Spieleserver: **( http://mathekoenig.stephankrauss.de )** würden wir uns freuen.  
 
 ### weitere Entwicklung des **Mathekönig**
 + Bildung eigener kleiner Königreiche durch eine Spielergruppe ( Vers. 1.1 )
