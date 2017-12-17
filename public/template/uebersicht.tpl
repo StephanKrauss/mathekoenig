@@ -47,7 +47,7 @@
        </p>
     </div>
 
-    <div class="col-lg-6 hidden-md hidden-xs hidden-sm">
+    <div class="col-lg-4 hidden-md hidden-xs hidden-sm">
         <span>
             <img src="/images/gruen_rahmen.png">
         </span>
@@ -61,6 +61,13 @@
             <img src="/images/ritter_gruen_rahmen.png">
         </span>
     </div>
+
+    <div class="col-lg-2 hidden-md hidden-xs hidden-sm">
+        <a href="https://github.com/StephanKrauss/mathekoenig" target="_blank">
+            <img src="/images/github.png">
+        </a>
+    </div>
+
 
 
 </div>

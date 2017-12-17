@@ -1,0 +1,9 @@
+<?php
+	$config = [
+		'db' => [
+			'host' => 'meinServer',
+			'dbname' => 'meineDatenbank',
+			'usr' => 'meineBenutzerkennung',
+			'pwd' => 'meinPasswort'
+		]
+	];
