@@ -44,7 +44,7 @@ https://de.wikipedia.org/wiki/MIT-Lizenz
 **Bei auftretenden Fragen helfen wir gern !**  
 Über einen Link zu unserem Spieleserver: **( http://mathekoenig.stephankrauss.de )** würden wir uns freuen.  
 
-### weitere Entwicklung des **Mathekönig**
+### weitere Entwicklung des **Mathekönigs**
 + Bildung eigener kleiner Königreiche durch eine Spielergruppe ( Vers. 1.1 )
 + Einbau eines Spielmodus ( ab Vers. 1.2 )
 	+ Abfrage der Quadratzahlen bis zur 20 ( ab Vers. 1.2.1 )
