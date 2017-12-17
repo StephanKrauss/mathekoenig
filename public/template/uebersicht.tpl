@@ -66,6 +66,11 @@
         <a href="https://github.com/StephanKrauss/mathekoenig" target="_blank">
             <img src="/images/github.png">
         </a>
+        <p>
+            <br><br>
+            Danke an: <br>
+            <a href="https://pixabay.com/de/users/GraphicMama-team-2641041/" target="_blank">Team GraphicMama</a>
+        </p>
     </div>
 
 
