@@ -70,6 +70,9 @@
             <br><br>
             Danke an: <br>
             <a href="https://pixabay.com/de/users/GraphicMama-team-2641041/" target="_blank">Team GraphicMama</a>
+
+            <p>Mathekönig ist ein Projekt des:<br>
+            "Förderverein der Oberschule Bergstadt Schneeberg"</p>
         </p>
     </div>
 
