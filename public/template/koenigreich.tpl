@@ -21,7 +21,7 @@
                <td> <b>Königreiche</b> </td>
            </thead>
            <tbody>
-               <tr><td></td></tr>
+
            </tbody>
        </table>
 
@@ -59,11 +59,11 @@
     <img class="zufall" style="float: left;">
     <p>
         Hier ist die Übersicht der vorhandenen Königreiche. Du kannst ein eigenes Königreich anlegen.
+    </p>
 
         <p>
             <button class="btn btn-warning closeButton" type="submit">schliessen</button>
         </p>
-    </p>
 </div>
 
-<script type="text/javascript" src="/template/koenigreich.js">
+<script type="text/javascript" src="/template/koenigreich.js"></script>

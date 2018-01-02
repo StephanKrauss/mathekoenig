@@ -49,11 +49,8 @@
 				$adel = $this->tabelleAdel($this->database);
 				$adel = $this->leerePositionen($adel);
 
-				$koenigreich = $this->tabelleKoenigreich($this->database);
-
 				// zusammenfügen im Response
 				$templateVars['adel'] = $adel;
-				$templateVars['koenigreich'] = $koenigreich;
 				$templateVars['subtemplate'] = 'uebersicht';
 
 				return $this->view->render( $response, 'main.tpl', $templateVars);

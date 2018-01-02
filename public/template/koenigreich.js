@@ -9,7 +9,8 @@ var koenigreich = function()
            success: function(request)
            {
                $.each(request.koenigreich, function(key, value){
-                   $('#reiche tr:last').after('<tr><td>' + value.koenigreich +  '</td></tr>');
+                   // $('#reiche tr:last').after('<tr><td>' + value.koenigreich +  '</td></tr>');
+                   $("#reiche tbody").append('<tr><td>' + value.koenigreich +  '</td></tr>');
                });
            }
        });
