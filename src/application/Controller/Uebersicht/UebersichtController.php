@@ -97,21 +97,5 @@
 			return $data;
 		}
 
-		/**
-		 * erstellt den Inhalt der Tabelle Königreich
-		 *
-		 * @return array
-		 */
-		protected function tabelleKoenigreich(\Slim\PDO\Database $database)
-		{
-			$select = $database
-				->select()
-				->from('koenigreich')
-				->orderBy('koenigreich');
 
-			$stm = $select->execute();
-			$koenigreich = $stm->fetchAll();
-
-			return $koenigreich;
-		}
 	}

@@ -46,6 +46,11 @@
 		{
 			try{
 				$templateVars = [];
+
+
+				$koenigreich = $this->tabelleKoenigreich($this->database);
+
+				$templateVars['koenigreich'] = $koenigreich;
 				$templateVars['subtemplate'] = 'koenigreich';
 
 				return $this->view->render( $response, 'main.tpl', $templateVars);
@@ -54,5 +59,23 @@
 			catch(\Exception $e){
 				throw $e;
 			}
+		}
+
+		/**
+		 * erstellt den Inhalt der Tabelle Königreich
+		 *
+		 * @return array
+		 */
+		protected function tabelleKoenigreich(\Slim\PDO\Database $database)
+		{
+			$select = $database
+				->select()
+				->from('koenigreich')
+				->orderBy('koenigreich');
+
+			$stm = $select->execute();
+			$koenigreich = $stm->fetchAll();
+
+			return $koenigreich;
 		}
 	}
