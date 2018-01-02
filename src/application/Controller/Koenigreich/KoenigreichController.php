@@ -45,16 +45,18 @@
 		public function __invoke(Request $request, Response $response, array $params)
 		{
 			try{
-				$templateVars = [];
+				if(count($params) == 0){
+					$templateVars = [];
+					$templateVars['subtemplate'] = 'koenigreich';
 
+					return $this->view->render( $response, 'main.tpl', $templateVars);
+				}
+				elseif(count($params) > 0 and $params['action'] == 'reiche'){
+					$koenigreich = $this->tabelleKoenigreich($this->database);
+					$antwort = json_encode($koenigreich);
 
-				$koenigreich = $this->tabelleKoenigreich($this->database);
-
-				$templateVars['koenigreich'] = $koenigreich;
-				$templateVars['subtemplate'] = 'koenigreich';
-
-				return $this->view->render( $response, 'main.tpl', $templateVars);
-
+					echo $antwort;
+				}
 			}
 			catch(\Exception $e){
 				throw $e;

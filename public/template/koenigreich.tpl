@@ -12,8 +12,24 @@
 
 <div class="row">
     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 col-md-offset-1 col-sm-offset-1 mark">
+        <div>
+
+        </div>
+
+        <table class="table table-striped table-bordered mark">
+           <thead>
+               <td> <b>Königreiche</b> </td>
+           </thead>
+           <tbody>
+               <tr id="row"><td id="cell"></td></tr>
+           </tbody>
+       </table>
+
+
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-6  mark">
         &nbsp;<br>
-        <div class="col-lg-2 hidden-md hidden-xs hidden-sm">
+        <div class="col-lg-6 hidden-md hidden-xs hidden-sm">
             <a href="https://github.com/StephanKrauss/mathekoenig" target="_blank">
                 <img src="/images/github.png">
             </a>
@@ -25,18 +41,7 @@
                 <p>Mathekönig ist ein Projekt des:<br>
                 "Förderverein der Oberschule Bergstadt Schneeberg"</p>
             </p>
-
-            <table class="table table-striped table-bordered  hidden-xs mark">
-               <thead>
-                   <td> <b>Königreiche</b> </td>
-               </thead>
-               <tbody>
-                   {% for zeile in koenigreich %}
-                       <tr>
-                           <td> {{zeile.koenigreich}} </td>
-                       </tr>
-                   {% endfor %}
-               </tbody>
-           </table>
         </div>
 </div>
+
+<script type="text/javascript" src="/template/koenigreich.js">
