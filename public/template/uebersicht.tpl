@@ -31,7 +31,7 @@
         <p class="col-lg-4 col-md-3 col-sm-4 col-md-offset-1 hidden-xs mark">
             <table class="table table-striped table-bordered  hidden-xs mark">
                 <thead>
-                    <td> &nbsp; </td><td> &nbsp; </td><td> Goldstücke </td><td> Gruppe </td>
+                <td> &nbsp; </td><td> &nbsp; </td><td> <b>Goldstücke</b> </td><td> <b>Gruppe</b> </td>
                 </thead>
                 <tbody>
                     {% for zeile in adel %}
@@ -74,6 +74,19 @@
             <p>Mathekönig ist ein Projekt des:<br>
             "Förderverein der Oberschule Bergstadt Schneeberg"</p>
         </p>
+
+        <table class="table table-striped table-bordered  hidden-xs mark">
+           <thead>
+               <td> <b>Königreiche</b> </td>
+           </thead>
+           <tbody>
+               {% for zeile in adel %}
+                   <tr>
+                       <td> {{zeile.maennlich}} </td>
+                   </tr>
+               {% endfor %}
+           </tbody>
+       </table>
     </div>
 
 
