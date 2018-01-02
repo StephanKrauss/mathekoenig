@@ -53,7 +53,12 @@
 				}
 				elseif(count($params) > 0 and $params['action'] == 'reiche'){
 					$koenigreich = $this->tabelleKoenigreich($this->database);
-					$antwort = json_encode($koenigreich);
+
+					$antwort = [];
+					$antwort['success'] = true;
+					$antwort['koenigreich'] = $koenigreich;
+
+					$antwort = json_encode($antwort);
 
 					echo $antwort;
 				}

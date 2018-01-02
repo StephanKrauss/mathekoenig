@@ -16,12 +16,12 @@
 
         </div>
 
-        <table class="table table-striped table-bordered mark">
+        <table class="table table-striped table-bordered mark" id="reiche">
            <thead>
                <td> <b>Königreiche</b> </td>
            </thead>
            <tbody>
-               <tr id="row"><td id="cell"></td></tr>
+               <tr><td></td></tr>
            </tbody>
        </table>
 
@@ -30,9 +30,6 @@
     <div class="col-lg-4 col-md-6 col-sm-6  mark">
         &nbsp;<br>
         <div class="col-lg-6 hidden-md hidden-xs hidden-sm">
-            <a href="https://github.com/StephanKrauss/mathekoenig" target="_blank">
-                <img src="/images/github.png">
-            </a>
             <p>
                 <br><br>
                 Danke an: <br>
@@ -40,6 +37,12 @@
 
                 <p>Mathekönig ist ein Projekt des:<br>
                 "Förderverein der Oberschule Bergstadt Schneeberg"</p>
+
+                <p>
+                    Mathekönig ist freue Software !<br>
+                    Zu finden auf
+                    <a target="_blank" href="https://github.com/StephanKrauss/mathekoenig">Github</a>
+                </p>
             </p>
         </div>
 </div>
