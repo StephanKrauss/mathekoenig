@@ -80,9 +80,9 @@
                <td> <b>Königreiche</b> </td>
            </thead>
            <tbody>
-               {% for zeile in adel %}
+               {% for zeile in koenigreich %}
                    <tr>
-                       <td> {{zeile.maennlich}} </td>
+                       <td> {{zeile.koenigreich}} </td>
                    </tr>
                {% endfor %}
            </tbody>

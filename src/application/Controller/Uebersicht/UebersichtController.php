@@ -6,7 +6,7 @@
 	use Slim\Http\Response;
 
 	/**
-	 * Anmeldung Controller
+	 * Erstellen der Übersicht der Adelstabelle und der vorhandenen Königreiche
 	 *
 	 * @author Stephan Krauß
 	 * @date 28.11.2017
@@ -31,24 +31,29 @@
 			$this->database = $database;
 		}
 
+		/**
+		 * steuert die Befüllung der Tabellen 'Adel' und 'Königreich'
+		 *
+		 * @param \Slim\Http\Request $request
+		 * @param \Slim\Http\Response $response
+		 * @param array $params
+		 *
+		 * @return \Psr\Http\Message\ResponseInterface
+		 * @throws \Exception
+		 */
 		public function __invoke(Request $request, Response $response, array $params)
 		{
 			try{
 				$templateVars = [];
 				
-				$select = $this->database
-					->select()
-					->from('adel')
-					->orderBy('id');
+				$adel = $this->tabelleAdel($this->database);
+				$adel = $this->leerePositionen($adel);
 
-				$stm = $select->execute();
-				$data = $stm->fetchAll();
+				$koenigreich = $this->tabelleKoenigreich($this->database);
 
-				$data[0]['punkte'] = '';
-				$data[1]['punkte'] = '';
-				$data[2]['punkte'] = '';
-
-				$templateVars['adel'] = $data;
+				// zusammenfügen im Response
+				$templateVars['adel'] = $adel;
+				$templateVars['koenigreich'] = $koenigreich;
 				$templateVars['subtemplate'] = 'uebersicht';
 
 				return $this->view->render( $response, 'main.tpl', $templateVars);
@@ -56,5 +61,57 @@
 			catch(\Exception $e){
 				throw $e;
 			}
+		}
+
+		/**
+		 * ermittelt den Inhalt der Adels Tabelle
+		 *
+		 * @return array
+		 */
+		protected function tabelleAdel(\Slim\PDO\Database $database)
+		{
+			$select = $database
+				->select()
+				->from('adel')
+				->orderBy('id');
+
+			$stm = $select->execute();
+			$data = $stm->fetchAll();
+
+			return $data;
+		}
+
+		/**
+		 * keine Darstellung der Goldstücke der Bewohner in der Königsburg
+		 *
+		 * @param $data
+		 *
+		 * @return mixed
+		 */
+		protected function leerePositionen($data)
+		{
+			$data[0]['punkte']='';
+			$data[1]['punkte']='';
+			$data[2]['punkte']='';
+
+			return $data;
+		}
+
+		/**
+		 * erstellt den Inhalt der Tabelle Königreich
+		 *
+		 * @return array
+		 */
+		protected function tabelleKoenigreich(\Slim\PDO\Database $database)
+		{
+			$select = $database
+				->select()
+				->from('koenigreich')
+				->orderBy('koenigreich');
+
+			$stm = $select->execute();
+			$koenigreich = $stm->fetchAll();
+
+			return $koenigreich;
 		}
 	}

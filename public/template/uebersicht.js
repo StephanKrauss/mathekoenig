@@ -16,7 +16,6 @@ var uebersicht = function(){
                 });
             }
         });
-
     }
 
     // public
