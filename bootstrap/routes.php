@@ -21,3 +21,6 @@ $app->post('/spielstand/', $container[\App\Controller\Spielstand\SpielstandContr
 
 // speichern - Child
 $app->post('/speichern/', $container[\App\Controller\Speichern\SpeichernController::class]);
+
+// Königreich
+$app->any('/koenigreich/', $container[\App\Controller\Koenigreich\KoenigreichController::class]);

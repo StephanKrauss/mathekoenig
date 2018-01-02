@@ -12,7 +12,8 @@
         <ul class="nav navbar-nav">
             <li><a href="/anmelden/">Anmelden</a></li>
             <li><a href="/rechnen/">Rechnen</a></li>
-            <li><a href="/uebersicht/">Übersicht</a></li>
+            <li><a href="/koenigreich/">Königreich</a></li>
+            <li><a href="/uebersicht/">Auswertung</a></li>
             <li><a href="#" id="abmelden">Abmelden</a></li>
         </ul>
     </div>

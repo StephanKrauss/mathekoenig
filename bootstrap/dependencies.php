@@ -44,3 +44,12 @@
 			$c['validator']
 		);
 	};
+
+	// Controller Koenigreich
+	$container[\App\Controller\Koenigreich\KoenigreichController::class]=function($c) {
+		return new \App\Controller\Koenigreich\KoenigreichController(
+			$c['view'],
+			$c['db'],
+			$c['validator']
+		);
+	};
