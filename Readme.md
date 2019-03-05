@@ -52,6 +52,9 @@ Die Installation eines eigenen Spielservers ist nicht zwingend notwendig.
 + Der Spielserver muss die Bildung von eigenen Subdomain unterstützen. 
   Zum Aufruf des **Mathekönigs** muss eine Subdomain auf das Verzeichnis **'public'**	verweisen.
   
+### Danke / Credits:
++ Bilder: **https://graphicmama.com/**
+  
 **Bei auftretenden Fragen helfen wir gern !**  
 Über einen Link zu unserem Spieleserver: **( http://mathekoenig.stephankrauss.de )** würden wir uns freuen.  
 
